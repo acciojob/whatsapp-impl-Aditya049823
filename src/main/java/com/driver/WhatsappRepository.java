@@ -43,7 +43,7 @@ public class WhatsappRepository {
         if(users.size()>2)
         {
             customGroupCount++;
-            groupName="Group"+customGroupCount;
+            groupName="Group "+ customGroupCount;
         }
         else
         {
