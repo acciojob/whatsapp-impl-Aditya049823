@@ -35,7 +35,7 @@ public class WhatsappRepository {
         }
         User user=new User(name,mobile);
         userMobile.add(mobile);
-        return "Success";
+        return "SUCCESS";
     }
 
     public Group createGroup(List<User> users) {
