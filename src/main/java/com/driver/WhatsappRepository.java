@@ -199,6 +199,6 @@ public class WhatsappRepository {
         groupMessageMap.remove(group);
         adminMap.remove(group);
 
-        return "SUCCESS";
+        return "Success";
     }
 }
