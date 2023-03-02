@@ -67,10 +67,10 @@ public class WhatsappRepository {
             throw new Exception("Group does not exist");
         }
         List<User>groupList=groupUserMap.get(group);
-        for(User user:groupList)
-        {
-            if(!user.equals(sender))
-            {
+        for(User user:groupList) {
+            if (user.equals(sender)) {
+                continue;
+            } else {
                 throw new Exception("You are not allowed to send message");
             }
         }
@@ -97,8 +97,11 @@ public class WhatsappRepository {
         List<User>participantList=groupUserMap.get(group);
         for(User u:participantList)
         {
-            if(!u.equals(user))
+            if(u.equals(user))
             {
+               continue;
+            }
+            else {
                 throw new Exception("User is not a participant");
             }
         }
