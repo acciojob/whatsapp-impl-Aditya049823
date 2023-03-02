@@ -104,7 +104,7 @@ public class WhatsappRepository {
         }
         User old=adminMap.get(group);
         adminMap.replace(group,old,user);
-        return "Success";
+        return "SUCCESS";
     }
 
     public int removeUser(User user) throws Exception {
